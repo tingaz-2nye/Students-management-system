@@ -13,16 +13,16 @@ Create a database called spas and import the spas.sql file in the database
 Default credentials for all users are: 
 
 Email: admin@admin.com  
-Password: admin123
+Password: admin 
 
 Email: teacher@teacher.com   
-Password: teacher123
+Password: teacher 
 
 Email: parent@parent.com  
-Password: parent123
+Password: parent
 
 Email: student@student.com   
-Password: student123
+Password: student
 
 Have fun and feel free to contribute to project 
 
