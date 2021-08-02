@@ -4,9 +4,9 @@
 
     // Assign Teacher to Class and Subject
     if(isset($_POST['assign_teacher_id']) && isset($_POST['assign_class_code']) && isset($_POST['assign_subject_id'])){
-        $teacher = mysql_prep($_POST['assign_teacher_id']);
-        $class = mysql_prep($_POST['assign_class_code']);
-        $subject = mysql_prep($_POST['assign_subject_id']);
+        $teacher = $_POST['assign_teacher_id'];
+        $class = $_POST['assign_class_code'];
+        $subject = $_POST['assign_subject_id'];
 
         $arr = array();
 

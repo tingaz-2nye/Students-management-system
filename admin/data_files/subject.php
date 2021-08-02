@@ -4,8 +4,8 @@
 
     // Add Subject
     if(isset($_POST['add_subject_name']) && isset($_POST['add_subject_code'])){
-        $subject_name = mysql_prep($_POST['add_subject_name']);
-        $subject_code = mysql_prep($_POST['add_subject_code']);
+        $subject_name = $_POST['add_subject_name'];
+        $subject_code = $_POST['add_subject_code'];
 
         $arr = array();
 

@@ -4,10 +4,10 @@
 
     // Register Parent 
     if(isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['email']) && isset($_POST['password'])){
-        $email = mysql_prep($_POST['email']);
-        $pass = mysql_prep($_POST['password']);
-        $first_name = mysql_prep($_POST['first_name']);
-        $last_name = mysql_prep($_POST['last_name']);
+        $email = $_POST['email'];
+        $pass = $_POST['password'];
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
 
         $password = md5($pass);
 

@@ -3,9 +3,9 @@
     require_once ('../includes/functions.php');
 
 if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['user_role'])){
-    $email = mysql_prep($_POST['email']);
-    $pass = mysql_prep($_POST['password']);
-    $user_role = mysql_prep($_POST['user_role']);
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
+    $user_role = $_POST['user_role'];
 
     $password = md5($pass);
     $arr = array();
@@ -72,8 +72,8 @@ if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['user_rol
 
 // Change Student Password
 if(isset($_POST['password']) && isset($_POST['newPass'])){
-    $password = mysql_prep($_POST['password']);
-    $newPassword = mysql_prep($_POST['newPass']);
+    $password = $_POST['password'];
+    $newPassword = $_POST['newPass'];
 
     $pass = md5($password);
     $newPass = md5($newPassword);
@@ -108,8 +108,8 @@ if(isset($_POST['password']) && isset($_POST['newPass'])){
 
 // Change parent Password
 if(isset($_POST['Ppassword']) && isset($_POST['PnewPass'])){
-    $password = mysql_prep($_POST['Ppassword']);
-    $newPassword = mysql_prep($_POST['PnewPass']);
+    $password = $_POST['Ppassword'];
+    $newPassword = $_POST['PnewPass'];
 
     $pass = md5($password);
     $newPass = md5($newPassword);

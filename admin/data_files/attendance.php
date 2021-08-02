@@ -6,11 +6,11 @@
 
     if(isset($_POST['add_week']) && isset($_POST['add_day']) && isset($_POST['add_student_id']) 
     && isset($_POST['add_status']) && isset($_POST['add_class'])){
-        $week = mysql_prep($_POST['add_week']);
-        $day = mysql_prep($_POST['add_day']);
-        $student_id = mysql_prep($_POST['add_student_id']);
-        $status = mysql_prep($_POST['add_status']);
-        $class = mysql_prep(strtoupper($_POST['add_class']));
+        $week = $_POST['add_week'];
+        $day = $_POST['add_day'];
+        $student_id = $_POST['add_student_id'];
+        $status = $_POST['add_status'];
+        $class = strtoupper($_POST['add_class']);
 
         $arr = array();
 

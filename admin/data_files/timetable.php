@@ -6,11 +6,11 @@
     // add timetable 
     if(isset($_POST['add_day']) && isset($_POST['add_class_code']) && isset($_POST['add_subject_code']) && isset($_POST['add_time_start']) && isset($_POST['add_time_end'])){
 
-        $day = mysql_prep($_POST['add_day']);
-        $class_code = mysql_prep($_POST['add_class_code']);
-        $subject_code = mysql_prep($_POST['add_subject_code']);
-        $time_start = mysql_prep($_POST['add_time_start']);
-        $time_end = mysql_prep($_POST['add_time_end']);
+        $day = $_POST['add_day'];
+        $class_code = $_POST['add_class_code'];
+        $subject_code = $_POST['add_subject_code'];
+        $time_start = $_POST['add_time_start'];
+        $time_end = $_POST['add_time_end'];
 
         $arr = array();
 
@@ -63,12 +63,12 @@
     // edit timetable
     if(isset($_POST['timetable_id']) && isset($_POST['edit_day']) && isset($_POST['edit_class_code']) && isset($_POST['edit_subject_code']) && isset($_POST['edit_start_time']) && isset($_POST['edit_end_time'])){
                 
-        $id = mysql_prep($_POST['timetable_id']);
-        $day = mysql_prep($_POST['edit_day']);
-        $class_code = mysql_prep($_POST['edit_class_code']);
-        $subject_code = mysql_prep($_POST['edit_subject_code']);
-        $time_start = mysql_prep($_POST['edit_start_time']);
-        $time_end = mysql_prep($_POST['edit_end_time']);
+        $id = $_POST['timetable_id'];
+        $day = $_POST['edit_day'];
+        $class_code = $_POST['edit_class_code'];
+        $subject_code = $_POST['edit_subject_code'];
+        $time_start = $_POST['edit_start_time'];
+        $time_end = $_POST['edit_end_time'];
 
         
 

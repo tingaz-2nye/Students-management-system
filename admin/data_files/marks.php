@@ -3,13 +3,13 @@
     require_once ('../includes/functions.php');
 
     if(isset($_POST['submit'])){
-        $student_id = mysql_prep($_POST['student_id']);
-        $class_code = mysql_prep($_POST['class_code']);
-        $subject_code = mysql_prep($_POST['subject_code']);
-        $exam_id = mysql_prep($_POST['exam_id']);
-        $marks = mysql_prep($_POST['marks']);
-        $mark_total = mysql_prep($_POST['mark_total']);
-        $comments = mysql_prep($_POST['comments']);
+        $student_id = $_POST['student_id'];
+        $class_code = $_POST['class_code'];
+        $subject_code = $_POST['subject_code'];
+        $exam_id = $_POST['exam_id'];
+        $marks = $_POST['marks'];
+        $mark_total = $_POST['mark_total'];
+        $comments = $_POST['comments'];
 
         if(!empty($student_id) && !empty($class_code) && !empty($subject_code) && !empty($exam_id) && !empty($marks) && !empty($mark_total) && !empty($comments)){
             $stmt = $db->prepare("INSERT INTO mark (student_id,class_code,subject_code,exam_id,mark,mark_total,comment) VALUES(?,?,?,?,?,?,?)");

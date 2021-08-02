@@ -6,9 +6,9 @@
     if(isset($_POST['notice_title_AddEvent']) && isset($_POST['notice_AddEvent'])  && isset($_POST['date_AddEvent'])  ){
 
         
-        $notice_title = mysql_prep($_POST['notice_title_AddEvent']);
-        $notice = mysql_prep($_POST['notice_AddEvent']);
-        $date = mysql_prep($_POST['date_AddEvent']);
+        $notice_title = $_POST['notice_title_AddEvent'];
+        $notice = $_POST['notice_AddEvent'];
+        $date = $_POST['date_AddEvent'];
         $arr = array();
 
         if(!empty($notice_title) && !empty($notice) && !empty($date)){

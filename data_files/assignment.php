@@ -4,10 +4,10 @@
 
     // upload Student Assignment
     if(isset($_FILES['file']['name']) && isset($_POST['title']) && isset($_POST['description']) && isset($_POST['class_code']) && isset($_POST['student_id'])){
-        $title = mysql_prep($_POST['title']);
-        $desc = mysql_prep($_POST['description']);
-        $class = mysql_prep($_POST['class_code']);
-        $student_id = mysql_prep($_POST['student_id']);
+        $title = $_POST['title'];
+        $desc = $_POST['description'];
+        $class = $_POST['class_code'];
+        $student_id = $_POST['student_id'];
 
         $arr = array();
 
@@ -44,7 +44,7 @@
 
     // Delete Teacher Assignment
     if(isset($_POST['data_id'])){
-        $id = mysql_prep($_POST['data_id']);
+        $id = $_POST['data_id'];
 
         $arr = array();
 
@@ -65,7 +65,7 @@
 
     // Delete Student Assignment
     if(isset($_POST['stdData_id'])){
-        $id = mysql_prep($_POST['stdData_id']);
+        $id = $_POST['stdData_id'];
 
         $arr = array();
 

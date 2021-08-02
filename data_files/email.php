@@ -7,7 +7,7 @@
     
     // Retrive teacher data
     if(isset($_POST['id'])){
-        $id = mysql_prep($_POST['id']);
+        $id = $_POST['id'];
 
         $arr = array();
         if(!empty($id)){
@@ -26,9 +26,9 @@
     // Email teacher
     if(isset($_POST['email_email']) && isset($_POST['email_subject']) && isset($_POST['email_message'])){
         
-        $email = mysql_prep($_POST['email_email']);
-        $subject = mysql_prep($_POST['email_subject']);
-        $message = mysql_prep($_POST['email_message']);
+        $email = $_POST['email_email'];
+        $subject = $_POST['email_subject'];
+        $message = $_POST['email_message'];
         
 
         

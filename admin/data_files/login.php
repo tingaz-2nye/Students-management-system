@@ -3,9 +3,9 @@
     require_once ('../includes/functions.php');
 
 if(isset($_POST['email']) && isset($_POST['password'])){
-    $email = mysql_prep($_POST['email']);
-    $pass = mysql_prep($_POST['password']);
-    $user_role = mysql_prep($_POST['user_role']);
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
+    $user_role = $_POST['user_role'];
 
     $password = md5($pass);
     $arr = array();

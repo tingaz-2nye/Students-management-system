@@ -7,15 +7,15 @@
     && isset($_POST['addstudent_id']) && isset($_POST['add_email']) && isset($_POST['addclass_code']) 
     && isset($_POST['add_gender']) && isset($_POST['add_password']) && isset($_POST['addparent_id'])){
         
-        $first_name = mysql_prep($_POST['addfirst_name']);
-        $last_name = mysql_prep($_POST['addlast_name']);
-        $age = mysql_prep($_POST['add_age']);
-        $gender = mysql_prep($_POST['add_gender']);
-        $student_id = mysql_prep($_POST['addstudent_id']);
-        $email = mysql_prep($_POST['add_email']);
-        $class = mysql_prep($_POST['addclass_code']);
-        $pass = mysql_prep($_POST['add_password']);
-        $parent_id = mysql_prep($_POST['addparent_id']);
+        $first_name = $_POST['addfirst_name'];
+        $last_name = $_POST['addlast_name'];
+        $age = $_POST['add_age'];
+        $gender = $_POST['add_gender'];
+        $student_id = $_POST['addstudent_id'];
+        $email = $_POST['add_email'];
+        $class = $_POST['addclass_code'];
+        $pass = $_POST['add_password'];
+        $parent_id = $_POST['addparent_id'];
 
         $password = md5($pass);
         $arr = array();

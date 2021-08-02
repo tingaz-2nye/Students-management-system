@@ -4,9 +4,9 @@
 
     // Add Exam
     if(isset($_POST['add_exam_name']) && isset($_POST['add_exam_date']) && isset($_POST['add_exam_comment'])){
-        $name = mysql_prep($_POST['add_exam_name']);
-        $date = mysql_prep($_POST['add_exam_date']);
-        $comment = mysql_prep($_POST['add_exam_comment']);
+        $name = $_POST['add_exam_name'];
+        $date = $_POST['add_exam_date'];
+        $comment = $_POST['add_exam_comment'];
 
         $arr = array();
 

@@ -6,10 +6,13 @@ $(document).ready(function(){
         var password = $('#password').val();
         var user_role = $('#user_role').val();
 
-        if(email != '' && password!=''){
+        
+
+        if (email != '' && password != '') {
+    
             $.ajax({
                 type:'POST',
-                url:'./data_files/login.php',
+                url:'../data_files/login.php',
                 dataType:'json',
                 data:{email:email,password:password, user_role:user_role },
                 success: function(result){
@@ -38,7 +41,11 @@ $(document).ready(function(){
                     }
                     
                     
+                },
+                error: function(data){
+                    console.log(data)
                 }
+                
             });
         }else{
             $('#email_error').val('Please enter email');

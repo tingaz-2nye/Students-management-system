@@ -4,9 +4,9 @@
 
 
     if(isset($_FILES['file']['name']) && isset($_POST['title']) && isset($_POST['description']) && isset($_POST['class_code'])){
-        $title = mysql_prep($_POST['title']);
-        $desc = mysql_prep($_POST['description']);
-        $class = mysql_prep($_POST['class_code']);
+        $title = $_POST['title'];
+        $desc = $_POST['description'];
+        $class = $_POST['class_code'];
 
         $arr = array();
 

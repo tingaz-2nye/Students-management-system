@@ -3,9 +3,9 @@
     require_once ('../includes/functions.php');
 
     if(isset($_POST['add_class_name']) && isset($_POST['add_class_level']) && isset($_POST['add_class_code'])){
-        $class_name = mysql_prep($_POST['add_class_name']);
-        $class_level = mysql_prep($_POST['add_class_level']);
-        $class_code = mysql_prep($_POST['add_class_code']);
+        $class_name = $_POST['add_class_name'];
+        $class_level = $_POST['add_class_level'];
+        $class_code = $_POST['add_class_code'];
 
         $arr = array();
 
