@@ -15,7 +15,7 @@ if(isset($_POST['title']) && isset($_POST['message'])){
         $stmt->bindParam(3,$message);
         $stmt->execute();
 		
-		if($stmt){
+		if($stmt) {
             $arr[0] = "You have succefully added a topic.";
             // $posts = get_posts($db);
 		}
