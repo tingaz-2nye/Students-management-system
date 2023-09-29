@@ -1,8 +1,8 @@
 # Students-management-system
  
-This a Bootstrap 3, Jquery and PHP backend built which allows schools to manage their students.
-The application allows teachers and admin to monitor student result and well as pass out important information
-To their students as well as parents.
+This a Bootstrap 3, Jquery and PHP backend build, which allows schools to manage their students.
+The application allows teachers and admin to monitor student result as well as pass out important information
+to their students and parents.
 The application allows teachers to pass out assignment to students.
 It also allows teachers and parents to interact via a chat system.
 The application also allows parents to view their children's results.
